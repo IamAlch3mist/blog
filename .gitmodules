@@ -1,0 +1,7 @@
+[submodule "IamAlch3mistblog/themes/ananke"]
+	path = IamAlch3mistblog/themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "IamAlch3mist/public"]
+	path = IamAlch3mist/public
+	url = https://github.com/IamAlch3mist/IamAlch3mist.github.io
+	branch = main

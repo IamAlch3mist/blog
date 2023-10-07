@@ -1,0 +1,14 @@
+baseURL = 'https://IamAlch3mist.github.io/'
+languageCode = 'en-us'
+title = 'IamAlch3mist blogs'
+
+theme = 'terminal'
+paginate = 5
+
+[params]
+  contentTypeName = "posts"
+  themeColor = "purple"
+  showMenuItems = 2
+  fullWidthTheme = false
+  centerTheme = true
+
