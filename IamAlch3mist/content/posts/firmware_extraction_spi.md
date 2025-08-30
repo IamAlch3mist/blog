@@ -13,4 +13,7 @@ hideComments = false
 color = "" #color from the theme settings
 +++
 
-https://hacklido.com/blog/379-firmware-extraction-from-spi-flash
+# Introduction 
+
+
+I started fuzzing some random projects from github hoping to get some CVE. Rather than jumping into complex projects like a PDF library i opted to start with some simple applications so i choose this elf-parser https://github.com/TheCodeArtist/elf-parser/ 
