@@ -17,3 +17,8 @@ paginate = 5
     endLevel = 3
     ordered = false
     startLevel = 2
+
+[[menu.main]]
+name = "`whoami`"
+url = "/about/"
+weight = 10
