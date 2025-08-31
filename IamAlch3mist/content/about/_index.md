@@ -8,7 +8,7 @@ This is my personal blog where I share my knowlege related to reverse engineerin
 
 ## About me 
 
-I'm **Ajay** an securtiy reseacher specialized in the field of embedded device security with 3+ years of hands-on experience.
+I'm **Ajay** an security researcher specialized in the field of embedded device security with 3+ years of hands-on experience.
 
 
 	My research focuses on :
