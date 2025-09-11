@@ -1,5 +1,5 @@
 +++
-title = "mobile hacking lab android kernel writeup"
+title = "mobilehackinglab: android kernel writeup"
 date = "2025-06-06T05:00:35+05:30"
 author = "IamAlch3mist"
 authorTwitter = "" #do not include @
