@@ -29,9 +29,9 @@ static const struct file_operations midas_dev_fops = {
 };
 ```
 
-On open the driver an allocation happens using kzalloc with the size of struct midas_priv_info and stored in the pointer info. At 2 the allocated info is stored in privat_data member of filp struct which is basically a void pointer. 
+On open the driver an allocation happens using kzalloc with the size of struct midas_priv_info and stored in the pointer info. At 2 the allocated info is stored in privat_data member of file struct which is basically a void pointer. 
 
-On close the info pointer is retrieved from the filp struct and passed to kfree. 
+On close the info pointer is retrieved from the file struct and passed to kfree. 
 
 ```c
 static int midas_dev_open(struct inode *inode, struct file *filp)
@@ -72,7 +72,7 @@ static int midas_dev_release(struct inode *inode, struct file *filp)
 }
 ```
 
-There are no locks or checks on in the filp->private_data. If the driver is opened multiple times (without properly closing prior handles). The filp->private_data pointer can be overwritten with a newly allocated info. Which results in memory leak. 
+There are no locks or checks on in the file->private_data. If the driver is opened multiple times (without properly closing prior handles). The file->private_data pointer can be overwritten with a newly allocated info. Which results in memory leak. 
 
 
 On close the allocated memory is freed but file->private data holds reference to the info pointer and didn't set to NULL. Combined with the ability to open the driver multiple times leading to potential use-after-free. 
