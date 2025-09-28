@@ -14,7 +14,7 @@ color = "" #color from the theme settings
 +++
 
 
-I borrowed a OnePlus phone from a friend to experiment with the kernel. Since the kernel is open source, I started digging (hoping for an LPE). I found a couple more bugs they are for another blog post, but here’s a neat little memory leak that can be abused for DoS and can lead to use‑after‑free.
+I borrowed a OnePlus phone from a friend to experiment with the kernel. Since the kernel is open source, I started digging (hoping for an LPE). I found a couple more bugs they are for another blog post, but here’s a neat little memory leak that can be abused for DoS and a potential use‑after‑free.
 
 I focused on vendor-specific drivers rather than the [mainline kernel](https://github.com/OnePlusOSS/android_kernel_oneplus_mt6893). The driver in question is: [`drivers/soc/oplus/midas/midas_dev.c`](https://github.com/OnePlusOSS/android_kernel_oneplus_mt6893/blob/oneplus/MT6893_R_11.0/drivers/soc/oplus/midas/midas_dev.c)
 
